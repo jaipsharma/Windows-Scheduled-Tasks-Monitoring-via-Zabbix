@@ -13,7 +13,8 @@ UnsafeUserParameters=1
 EnableRemoteCommands=1
 UserParameter=TaskSchedulerMonitoring[*],powershell -NoProfile -ExecutionPolicy Bypass -File "C:\Program Files\Zabbix Agent\DiscoverScheduledTasks.ps1" "$1" "$2"
 
-4.	Verify if your Windows Hosts is enable for execute scripts, if no, run in powershell:
+4.	Verify if your Windows Hosts is enable for execute scripts, if not, run below command in powershell (Admin Mode and Click on Yes ALL):
+
 Set-ExecutionPolicy RemoteSigned
 
 5.	Restart the Zabbix Agent
